@@ -1,0 +1,10 @@
+package com.lin;
+
+public class InitialComputer {
+
+	public static void main(String[] args) {
+		Computer computer =new Computer(8999,1700,970);
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.lin;
+
+public class Computer {
+    int price;
+    float cpu;
+    float xianka;
+    void Playgame(){
+    	System.out.println("Computer有玩游戏的功能！");
+    }
+    void Listensong(){
+    	System.out.println("price:"+price+"cpu:"+cpu+"xianka:"+xianka+"Computer有听歌的功能！");
+    }
+}

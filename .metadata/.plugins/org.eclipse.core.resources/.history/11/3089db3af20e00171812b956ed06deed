@@ -1,0 +1,21 @@
+package com.aaaaaaa;
+import java.util.Scanner;
+public class Circle extends Shape {
+	
+	double PI=Math.PI;
+	double M;
+	double Z;
+	public void area(){
+		System.out.println("请输入圆的半径：");
+		Scanner reader=new Scanner(System.in);
+		int r=reader.nextInt();
+		M=PI*r*r;
+		System.out.println("面积为："+M);
+	}
+	public void perimete(){
+		Z=2*PI*r;
+		System.out.println("周长为："+Z);
+		
+	}
+
+}

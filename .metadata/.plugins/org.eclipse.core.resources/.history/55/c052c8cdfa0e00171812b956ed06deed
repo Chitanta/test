@@ -1,0 +1,11 @@
+package com.aaaaaaa;
+
+public abstract class Shape {
+	public abstract void Area(int r);
+
+	public abstract void Perimete(int r);
+	public abstract void Area(int x,int y);
+	public abstract void Perimete(int x,int y);
+	
+
+}

@@ -1,0 +1,17 @@
+package com.hao;
+
+public class InitialTransportation {
+
+	public static void main(String[] args) {
+		Transportation tr=new Transportation();
+		tr. name="火车";
+		tr. speed=120;
+		
+		tr.Mnned();
+		Train tc=new Train();
+		tc.price=600;
+		tc.Caa();
+
+	}
+
+}

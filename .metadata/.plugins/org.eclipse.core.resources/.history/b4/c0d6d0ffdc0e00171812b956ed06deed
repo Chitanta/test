@@ -1,0 +1,19 @@
+package com.haobu;
+
+public class InitialTelephone {
+	public static void main(String[] args) {
+		Telephone phone=new Telephone();
+		phone.cpu=2.0;
+		Telephone phone2=new Telephone();
+		phone2.cpu=2.0;
+		if(phone.equals(phone2)){
+			System.out.println("相同");
+			phone.Outer();
+		}else{
+			System.out.println("不同");
+			phone2.Outer();
+		}
+	}
+
+
+}

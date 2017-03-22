@@ -1,0 +1,16 @@
+package com.aaaaaaa;
+
+public class Rectangle extends Shape {
+	int chang=10;
+	int kuan=8;
+	int M;
+	int Z;
+	public void area(){
+		M=chang*kuan;
+		System.out.println("面积为："+M);
+	}
+    public void perimete(){
+    	Z=(chang+kuan)*2;
+    	System.out.println("周长为："+Z);
+    }
+}

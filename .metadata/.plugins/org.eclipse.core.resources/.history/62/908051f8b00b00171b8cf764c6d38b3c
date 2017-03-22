@@ -1,0 +1,13 @@
+package com.lin;
+
+public class Computer {
+	int price;
+	int cpu;
+	int xianka;
+    public Computer(int newprice,int newcpu,int newxianka){
+    	price=newprice;
+    	cpu=newcpu;
+    	xianka=newxianka;
+    	System.out.println("price:"+price+"cpu:"+cpu+"xianka:"+xianka);
+    }
+}

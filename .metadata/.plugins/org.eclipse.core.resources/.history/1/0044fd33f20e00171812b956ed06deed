@@ -1,0 +1,17 @@
+package com.aaaaaaa;
+
+public class Circle extends Shape {
+	int r=5;
+	double PI=Math.PI;
+	double M;
+	double Z;
+	public void area(){
+		M=PI*r*r;
+		System.out.println("面积为："+M);
+	}
+	public void perimete(){
+		Z=2*PI*r;
+		System.out.println("周长为："+Z);
+	}
+
+}

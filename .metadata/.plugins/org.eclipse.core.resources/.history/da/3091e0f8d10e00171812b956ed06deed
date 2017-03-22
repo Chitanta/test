@@ -1,0 +1,16 @@
+package com.hao;
+
+public class Transportation {
+	String name;
+	double speed;
+	public void Mnned(){
+		System.out.println("交通工具有载人的功能！");
+	}
+public static void main(String[] args) {
+	String name="火车";
+	double speed=120;
+	Transportation tr=new Transportation();
+	tr.Mnned();
+}
+}
+

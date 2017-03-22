@@ -1,0 +1,16 @@
+package com.jia;
+
+public class Computer {
+	private int price;
+	private int cpu;
+	private int xianka;
+	
+    public int getPrice(){
+    	return price;
+    }
+    public void setPrice(int newPrice){
+    	price=newPrice;
+    }
+    
+    
+}
