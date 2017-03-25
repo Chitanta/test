@@ -1,0 +1,11 @@
+package com.kjjjjjjj;
+
+public class Psp implements IPlaygame {
+
+	@Override
+	public void Playgame() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

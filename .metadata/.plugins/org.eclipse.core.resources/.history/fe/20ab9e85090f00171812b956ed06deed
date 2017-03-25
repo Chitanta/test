@@ -1,0 +1,6 @@
+package com.kjjjjjjj;
+
+public interface IPlaygame {
+	public void playgame();
+
+}

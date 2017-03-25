@@ -1,0 +1,5 @@
+package com.linjiaqi;
+
+public class American extends Human {
+
+}

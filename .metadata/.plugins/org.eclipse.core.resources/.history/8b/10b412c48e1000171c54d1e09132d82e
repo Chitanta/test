@@ -1,0 +1,5 @@
+package com.dadazc;
+
+public class Coach extends Car {
+
+}
