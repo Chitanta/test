@@ -1,0 +1,11 @@
+package com.ice;
+import java.util.*;
+public class Time {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Date d=new Date();
+		System.out.println("当前时间为："+d);
+	}
+
+}

@@ -1,0 +1,40 @@
+package com.fire;
+
+public class Hello {
+	public static void main(String[] args) {
+		int a=56;
+		//创建Integer包装类对象
+		Integer b= new Integer(a);
+		//讲Integer包装类转换为double类型
+		double c=b.doubleValue();
+		// 将Integer包装类转换为float类型
+		float d=b.floatValue();
+		// 将Integer包装类转换为int类型
+		int e=b.hashCode();
+		System.out.println("Integer包装类型："+b);
+		System.out.println("double类型："+c);
+		System.out.println("folat类型："+d);
+		System.out.println("int类型："+e);
+		
+		
+		//包装
+		//定义一个double类型的f并赋值
+		double f=10.2;
+		//手动包装
+		Double g=new Double(f);
+		//自动包装
+		Double h=f;
+		System.out.println("手动包装："+g+"自动包装："+h);
+		
+		
+		//拆装
+		//定义一个double的包装类对象，值为85.5
+		Double u=new Double(85.5);
+		//手动拆装
+		double i=u.doubleValue();
+		//自动拆装
+		double o=u;
+		System.out.println("手动拆装："+u+"自动拆装："+o);
+	}
+
+}

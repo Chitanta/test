@@ -1,0 +1,16 @@
+package com.fire;
+
+public class Hello {
+	public static void main(String[] args) {
+		int a=56;
+		Integer b= new Integer(a);
+		double c=b.doubleValue();
+		float d=b.floatValue();
+		int e=b.hashCode();
+		System.out.println("Integer包装类型："+b);
+		System.out.println("double类型：");
+		System.out.println("folat类型：");
+		System.out.println("int类型：");
+	}
+
+}
