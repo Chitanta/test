@@ -1,0 +1,33 @@
+package com.imooc.cellection;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListTest {
+	public List courseToselect;
+	public ListTest(){
+		this.courseToselect=new ArrayList();
+	}
+	public void Addcourse(){
+		Course cr1=new Course("1","JAVA");
+		courseToselect.add(cr1);
+		Course temp=(Course)courseToselect.get(0);
+		System.out.println("添加的课程："+temp.id+":"+temp.name);
+		
+		
+		Course cr2=new Course("2","C++");
+		courseToselect.add(0,cr2 );
+		Course temp2=(Course)courseToselect.get(0);
+		System.out.println("添加的课程："+temp2.id+":"+temp2.name);
+		
+		
+		Course cr3=new Course("3","C#");
+		courseToselect.add(3, cr3);
+		Course temp3=(Course)courseToselect.get(0);
+	}
+	public static void main(String[] args) {
+		ListTest lt=new ListTest();
+		lt.Addcourse();		
+	}
+
+}

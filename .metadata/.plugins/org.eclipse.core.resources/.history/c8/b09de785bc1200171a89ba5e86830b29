@@ -1,0 +1,11 @@
+package com.imooc.cellection;
+
+public class Course {
+	public String name;
+	public String id;
+	public Course(String name,String id){
+		this.name=name;
+		this.id=id;
+	}
+
+}

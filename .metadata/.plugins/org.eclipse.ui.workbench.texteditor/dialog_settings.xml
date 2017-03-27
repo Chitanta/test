@@ -13,26 +13,26 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="index" key="selection"/>
+		<item value="Course" key="selection"/>
 		<list key="findhistory">
+			<item value="Student"/>
+			<item value="拆箱"/>
+			<item value="包装"/>
 			<item value="a"/>
 			<item value="rent"/>
 			<item value="money"/>
 			<item value="hello"/>
 			<item value="HelloWorld"/>
-			<item value="showmylove"/>
-			<item value="address"/>
-			<item value="房产"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Course"/>
+			<item value="拆箱"/>
+			<item value="装箱"/>
 			<item value="index"/>
 			<item value="sum"/>
 			<item value="show"/>
 			<item value="world"/>
 			<item value="mylove"/>
-			<item value="学生"/>
-			<item value="Student"/>
-			<item value="Sg"/>
 		</list>
 	</section>
 </section>
