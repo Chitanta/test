@@ -1,0 +1,93 @@
+package com.briup.jdbc.work.day01;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+
+public class Student {
+	private static Connection connection;
+	private static Statement statement;
+	private static ResultSet rs;
+
+	public static void main(String[] args) {
+		// 返回连接对象
+		connection = DriverFactory.getConnection();
+		try {
+			statement = connection.createStatement();
+			// sql语句
+
+			String Isql = "insert into student values(1,'tom',18),(2,'jack',19),(3,'bob',20),(4,'luna',21),(5,'lisa',22)";
+			String Usql = "update student set name='张三' where id=2";
+			String Dsql = "delete from student where id=5 ";
+			String Ssql = "select * from student";
+			// 插入数据
+			Insert(Isql);
+			Select(Ssql);
+			// 修改数据
+			Update(Usql);
+			Select(Ssql);
+			//删除数据
+			Delete(Dsql);
+			// 查询数据
+			Select(Ssql);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+	public static void Insert(String sql) {
+		try {
+			int i = statement.executeUpdate(sql);
+			System.out.println("插入了" + i + "条数据");
+		} catch (SQLException e) {
+			try {
+				connection.rollback();
+			} catch (SQLException e1) {
+
+				e1.printStackTrace();
+			}
+			e.printStackTrace();
+		}
+	}
+
+	public static void Update(String sql) {
+
+		try {
+			int i = statement.executeUpdate(sql);
+			System.out.println("修改了" + i + "条数据");
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+
+	}
+
+	public static void Delete(String sql) {
+
+		try {
+			int i = statement.executeUpdate(sql);
+			System.out.println("删除了" + i + "条数据");
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+
+	}
+
+	public static void Select(String sql) {
+		try {
+			rs = statement.executeQuery(sql);
+			while (rs.next()) {
+				System.out.println("id:" + rs.getInt("id") + "-->name:"
+						+ rs.getString("name") + "-->age:" + rs.getInt("age"));
+			}
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,25 @@
+package com.briup.jaha;
+
+public class Digit {
+
+	public static void main(String[] args) {
+	    int x=1;
+	    int sum=1;
+	    do{
+	    	x++;
+	    	sum++;
+	    }while(x<5);
+	    System.out.println("共能组成"+sum+"个数");
+	for(int i =4;i>0;i--){
+		for(int j=4;j>0 && j!=x;j--){
+			for(int k=4;k>0 && k!=j;k--){
+			System.out.println(100*i+10*j+k);
+			}
+			
+		}
+
+	}
+
+	}
+
+}

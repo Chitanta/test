@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <public publicId="-//Hibernate/Hibernate Configuration DTD 3.0//EN" uri="platform:/resource/XML_JD/src/com/briup/day02/auto/dtd/hibernate-configuration-3.0.dtd"/>
+  <public publicId="-//jd1707 DTD 1.0//zh_cn" uri="platform:/resource/XML_JD/src/com/briup/day02/auto/dtd/student.dtd"/>
+  <system systemId="http://www.springframework.org/schema/beans/spring-beans-3.2.xsd" uri="platform:/resource/XML_JD/src/com/briup/day02/auto/schema/spring-beans-3.2.xsd"/>
+  <system systemId="http://www.springframework.org/schema/context/spring-context-3.2.xsd" uri="platform:/resource/XML_JD/src/com/briup/day02/auto/schema/spring-context-3.2.xsd"/>
+</catalog>

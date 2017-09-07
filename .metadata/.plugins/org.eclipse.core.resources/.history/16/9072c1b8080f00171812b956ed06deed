@@ -1,9 +1,0 @@
-package com.kjjjjjjj;
-
-public class Smartphone extends Telephone{
-	public void Can(){
-		System.out.println("智能机能打电话");
-	}
-	
-
-}

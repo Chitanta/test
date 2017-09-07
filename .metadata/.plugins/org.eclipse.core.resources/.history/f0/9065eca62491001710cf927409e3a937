@@ -1,0 +1,24 @@
+package com.briup.jdbc.day01;
+
+import java.io.File;
+import java.sql.Connection;
+
+/**
+ * 封装JDBC前两步
+ * @author Hyouka
+ *
+ */
+public class DriverFactory {
+	static{
+		File file = new File("src/com/briup/jdbc/day01/JDBC.properties");
+		System.out.println(file.exists());
+	}
+	
+	//返回连接对象
+	public Connection getConnection(){
+		return null;
+	}
+	public static void main(String[] args) {
+		
+	}
+}

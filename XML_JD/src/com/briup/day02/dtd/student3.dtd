@@ -1,0 +1,39 @@
+<!--
+
+对元素的属性进行约束
+	格式：
+		<!ATTLIST 元素名  属性名   值类型   属性特点>
+		值类型：C
+			CDATA：表示属性值是任意字符包括数字和字母
+			ID：表示属性值必须唯一，但属性值必须符合xml命名规范
+			IDREF/IDREFS：指向文档中ID类型的属性值
+			枚举：(male|female) 属性值二选一
+		
+		属性特点：
+			#REQUIRED：表示属性必须出现
+			#IMPLIED：表示可以出现可以不出现
+			default-value：默认值
+			#FIXED:表示属性可以不出现，但是如果出现的话必须是规定好的值
+ -->
+
+<!ELEMENT students (stu+)>
+<!--
+属性值为枚举的写法
+<!ATTLIST stu gender (male|female) #REQUIRED>
+-->
+<!--
+多个属性的写法
+<!ATTLIST stu 
+		name CDATA #REQUIRED
+		id ID #REQUIRED
+		pid IDREFS #IMPLIED
+		>
+		-->
+<!--
+属性值为任意类型属性如果出现必须是规定值
+<!ATTLIST stu name CDATA #FIXED "tom">
+-->
+<!--
+参考格式规范
+<!ATTLIST stu name CDATA #REQUIRED>
+-->

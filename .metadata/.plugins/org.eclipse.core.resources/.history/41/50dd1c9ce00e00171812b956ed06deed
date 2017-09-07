@@ -1,8 +1,0 @@
-package com.tx;
-
-public class Transprort {
-	public void Manned(){
-		System.out.println("交通工具具有载人的功能！");
-	}
-
-}

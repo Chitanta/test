@@ -1,0 +1,16 @@
+package com.briup.jaha;
+
+public class Divade {
+
+	public static void main(String[] args) {
+		int a =50;
+		f1:while(true){
+			if(a==2){
+			System.out.println(a);
+		}else if (a%2==0){
+			continue f1;
+		}
+
+	}
+	}
+}

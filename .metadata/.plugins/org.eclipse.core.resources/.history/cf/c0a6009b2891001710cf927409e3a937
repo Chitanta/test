@@ -1,0 +1,69 @@
+package com.briup.jdbc.day01;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Properties;
+
+/**
+ * 封装JDBC前两步
+ * 
+ * @author Hyouka
+ *
+ */
+public class DriverFactory {
+	private static Properties pro;
+	private static String driver;
+	private static String url;
+	private static String name;
+	private static String pwd;
+	private static Connection connection;
+
+	static {
+		File file = new File("src/com/briup/jdbc/day01/JDBC.properties");
+		// System.out.println(file.exists());
+
+		try {
+			pro = new Properties();
+			// 将保存数据的文件，读取到pro对象里面
+			pro.load(new FileInputStream(file));
+			driver = pro.getProperty("driver");
+			url = pro.getProperty("url");
+			name = pro.getProperty("user");
+			pwd = pro.getProperty("password");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	// 返回连接对象
+	public static Connection getConnection() {
+
+		try {
+			// 1、获取驱动
+			Class.forName(driver);
+			// 2、获取连接对象
+			connection = DriverManager.getConnection(url, name, pwd);
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return connection;
+	}
+
+//	public static void main(String[] args) {
+//		Connection con = new DriverFactory().getConnection();
+//		System.out.println(con);
+//	}
+}

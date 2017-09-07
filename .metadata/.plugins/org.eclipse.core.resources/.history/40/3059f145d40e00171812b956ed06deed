@@ -1,8 +1,0 @@
-package com.hao;
-
-public class Train extends Transportation {
-	public void Mnned(){
-		
-	}
-
-}

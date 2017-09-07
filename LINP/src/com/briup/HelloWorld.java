@@ -22,7 +22,7 @@ public class HelloWorld {// 定义一个包含整型数组参数的方法，用�
 			if(num>3){
 				break;
 			}
-			System.out.println(scores[i]);
+			System.out.print(scores[i]+"  ");
 		}
 	}
 }

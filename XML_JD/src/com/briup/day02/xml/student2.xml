@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students SYSTEM "../dtd/student2.dtd">
+	<!-- <!ELEMENT students (stu+)> -->
+	
+
+	<students>
+		<stu></stu>
+		<!-- <test></test> -->
+	</students>

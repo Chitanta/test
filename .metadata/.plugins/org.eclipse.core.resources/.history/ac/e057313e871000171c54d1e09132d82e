@@ -1,5 +1,0 @@
-package com.linjiaqi;
-
-public class Chinese extends Human {
-
-}

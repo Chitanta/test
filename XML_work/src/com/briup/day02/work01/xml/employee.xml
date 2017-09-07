@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE employees SYSTEM "../dtd/employee.dtd">
+
+
+<employees>
+	<emp id="a1" name="a" depName="市场部" gender="female" ></emp>
+</employees>

@@ -1,7 +1,0 @@
-package com.linjiaqi;
-
-public class Human {
-	public void Speak(){
-		System.out.println("人类能说话！");
-	}
-}

@@ -1,0 +1,29 @@
+package com.briur;
+
+public class LOopTest {
+	 public static void main(String[] args){
+		 int a=1;
+		 int sum=1;
+/*   while(a<10){
+		   a++;
+		   sum =sum*a;
+		   }
+		   System.out.println(sum);
+		   */
+
+   do{
+		   a++;
+		   sum*=a;
+		   }
+		   while(a<10);
+		   System.out.println(sum);
+		   
+	/*for(int i=1;i<10;i++){
+			a++;
+			sum*=a;
+			}	  
+			System.out.println(sum);
+			*/
+ }
+
+}

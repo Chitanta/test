@@ -1,8 +1,0 @@
-package com.haobu;
-
-public class InitialTelephone {
-	public static void main(String[] args) {
-		
-	}
-
-}

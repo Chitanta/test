@@ -13,26 +13,30 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="Course" key="selection"/>
+		<item value="a" key="selection"/>
 		<list key="findhistory">
-			<item value="Student"/>
-			<item value="拆箱"/>
-			<item value="包装"/>
-			<item value="a"/>
-			<item value="rent"/>
-			<item value="money"/>
-			<item value="hello"/>
-			<item value="HelloWorld"/>
+			<item value="synchronized"/>
+			<item value="A"/>
+			<item value="Integer"/>
+			<item value="JButton"/>
+			<item value="Panel"/>
+			<item value="double"/>
+			<item value="n"/>
+			<item value="finalist"/>
 		</list>
 		<list key="replacehistory">
+			<item value="a"/>
+			<item value="int"/>
+			<item value="JPanel"/>
+			<item value="Object"/>
+			<item value="m"/>
+			<item value="$int"/>
+			<item value="finalist"/>
 			<item value="Course"/>
-			<item value="拆箱"/>
-			<item value="装箱"/>
-			<item value="index"/>
-			<item value="sum"/>
-			<item value="show"/>
-			<item value="world"/>
-			<item value="mylove"/>
 		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="234" key="DIALOG_Y_ORIGIN"/>
+		<item value="452" key="DIALOG_X_ORIGIN"/>
 	</section>
 </section>

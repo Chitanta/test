@@ -1,5 +1,0 @@
-package com.linjiaqi;
-
-public abstract class Human {
-	public abstract void Speak();
-}

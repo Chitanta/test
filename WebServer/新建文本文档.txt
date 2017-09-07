@@ -1,0 +1,155 @@
+name=steven
+gender=male
+age=30
+time=12.30
+
+prop_name=prop_value
+
+
+
+
+
+		System.out.println(getName() + "接收到");
+		try {
+			os = s.getOutputStream();
+			BufferedReader br = new BufferedReader(new InputStreamReader(
+					s.getInputStream()));
+			;
+			System.out.println("***************************");
+			// while ((str=br.readLine())!=null) {
+			// System.out.println(str);
+			// }
+			br=new BufferedReader(new InputStreamReader(s.getInputStream()));
+			String st = null;
+			s3=st.split(" ");
+			File file =new File("src\\"+s3[1]);
+			 if (file.exists()) {
+				 fis = new FileInputStream(file);
+				 
+				 bis = new BufferedInputStream(fis);
+				
+				 // osw=new OutputStream(os);
+			
+				 bos = new BufferedOutputStream(os);
+				 // bw=new BufferedWriter(new OutputStreamWriter(os));
+				 
+				 byte[] buf2 = new byte[1024];
+				 while ((bis.read(buf2)) != -1) {
+					 bos.write(buf2);
+					 bos.flush();
+				 }
+			 }
+			
+			char[] c = new char[1024];
+			br.read(c);
+			String[] strings =String.valueOf(c).split("\r\n");
+			List<String> list = new ArrayList<String>();
+			for(int i=0;i<strings.length;i++){
+				list.add(strings[i]);
+			}
+			String string = (list.get(list.size() - 1)).trim();
+			System.out.println(string);
+			
+			String[] s1 = string.split("&");
+			String st1=s1[0];String st2=s1[1];
+			String[] s2=st1.split("=");
+			String[] s3=st2.split("=");
+			if(s2.length<2||s3.length<2){
+				System.out.println(c);
+				File file3 = new File(
+						"C:\\Users\\Administrator\\Desktop\\项目材料\\Error.html");
+				fis = new FileInputStream(file3);
+
+				bis = new BufferedInputStream(fis);
+				bos = new BufferedOutputStream(os);
+
+				byte[] buf1 = new byte[1];
+				while ((bis.read(buf1)) != -1) {
+					bos.write(buf1);
+					bos.flush();
+				}
+			
+			}
+			//String[] strings2=new String[2];
+			else if (s2[1].equals("ljq") && s3[1].equals("124")) {
+				File file1 = new File(
+						"C:\\Users\\Administrator\\Desktop\\项目材料\\index.html");
+				fis = new FileInputStream(file1);
+
+				bis = new BufferedInputStream(fis);
+				bos = new BufferedOutputStream(os);
+
+				byte[] buf = new byte[1];
+				while ((bis.read(buf)) != -1) {
+					bos.write(buf);
+					bos.flush();
+				}
+			} else {
+				File file2 = new File(
+						"C:\\Users\\Administrator\\Desktop\\项目材料\\Error.html");
+				fis = new FileInputStream(file2);
+
+				bis = new BufferedInputStream(fis);
+				bos = new BufferedOutputStream(os);
+
+				byte[] buf = new byte[1];
+				while ((bis.read(buf)) != -1) {
+					bos.write(buf);
+					bos.flush();
+				}
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		// System.out.println(file.getPath());
+		// fis=new FileInputStream(file);
+		//
+		//
+		// bis=new BufferedInputStream(fis);
+		// bos=new BufferedOutputStream(os);
+		//
+		// byte[] buf =new byte[1024];
+//		 while((bis.read(buf))!=-1){
+//		 bos.write(buf);
+//		 bos.flush();
+//		 }
+
+		// else {
+		// File file2=new File("E:\\res\\res2.txt"+str1[1]);
+		// fis=new FileInputStream(file2);
+		// isr=new InputStreamReader(fis,"gbk");
+		// br=new BufferedReader(isr);
+		// bw=new BufferedWriter(new OutputStreamWriter(os));
+		// String buf="";
+		// while((buf =br.readLine())!=null){
+		// bw.write(buf);
+		// bw.flush();
+		// }
+		// }
+
+		// catch (IOException e) {
+		//
+		// e.printStackTrace();
+		// }
+		finally {
+			try {
+				if (s != null)
+					s.close();
+				if (os != null)
+					os.close();
+				if (bw != null)
+					bw.close();
+				if (isr != null)
+					isr.close();
+				if (fis != null)
+					fis.close();
+				if (bos != null)
+					bos.close();
+				if (bis != null)
+					bis.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	

@@ -1,0 +1,24 @@
+package com.briup.jdbc.work.day01;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import com.briup.jdbc.day01.DriverFactory;
+
+public class Student {
+	private static Connection connection;
+	private static Statement statement;
+	public static void main(String[] args) {
+		//返回连接对象
+		connection=DriverFactory.getConnection();
+		try {
+			statement=connection.createStatement();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//sql语句
+		String Isql="insert into student vaules(1,'tom',18)";
+	}
+}
